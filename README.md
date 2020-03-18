@@ -1,6 +1,6 @@
 # QA Engineer Coding Challenge
 
-Hello there and wellcome to our coding challenge. Buckel up and enjoy the ride. 
+Hello there and welcome to our coding challenge. Buckel up and enjoy the ride. 
 
 ## Rules
 Before we start there are some rules of engagement:

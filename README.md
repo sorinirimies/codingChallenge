@@ -16,9 +16,21 @@ Before we start there are some rules of engagement:
 ## The Challenge
 
 The challenge consits in:
-- creating a small `Java`, preferably `Kotlin` project. The project can be either a Backend service (preferably Spring or Ktor), or a simple iOS or Android app
-- the project should contain some http client that calls TMDB API https://www.themoviedb.org/documentation/api
-- the requests can be query movies based on `release_date`, `popularity` etc. It is up to you how you want to use TMDB API
-- Java, Kotlin or Swift Unit Tests dealing with checking the requests and their response
-- traces recorded through a proxy client (e.g.  mitmproxy) containing traffic for the specific request
+1. Choose one of an already existing Android or iOS TMDB client Apps from these:
+https://github.com/skydoves/TheMovies
+https://github.com/alfianlosari/MovieInfoMVVMiOS
+https://github.com/haroldadmin/MovieDB
+https://github.com/IhwanID/belajar-android-jetpack-pro
+
+2. Write automation tests based on the sample project you chose
+Automations tests should include:
+ -going from main movies list screen to the details screen of the app
+-filtering movies based on year or popularity
+
+3. Cucumber UI features:
+- based on the screens in the app write Cucumber features
+
+4. Network tests
+- use one of the tracing tools to trace the app network traffic
+- simulate network velocity
 

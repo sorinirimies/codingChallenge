@@ -17,9 +17,13 @@ Before we start there are some rules of engagement:
 
 The challenge consits in:
 1. Choose one of an already existing Android or iOS TMDB client Apps from these:
+
 https://github.com/skydoves/TheMovies
+
 https://github.com/alfianlosari/MovieInfoMVVMiOS
+
 https://github.com/haroldadmin/MovieDB
+
 https://github.com/IhwanID/belajar-android-jetpack-pro
 
 2. Write automation tests based on the sample project you chose

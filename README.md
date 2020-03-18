@@ -27,9 +27,10 @@ https://github.com/haroldadmin/MovieDB
 https://github.com/IhwanID/belajar-android-jetpack-pro
 
 2. Write automation tests based on the sample project you chose
+
 Automations tests should include:
- -going from main movies list screen to the details screen of the app
--filtering movies based on year or popularity
+- going from main movies list screen to the details screen of the app
+- filtering movies based on year or popularity
 
 3. Cucumber UI features:
 - based on the screens in the app write Cucumber features

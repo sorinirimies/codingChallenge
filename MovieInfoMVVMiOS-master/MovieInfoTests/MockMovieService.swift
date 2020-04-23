@@ -11,35 +11,58 @@ import Foundation
 @testable import MovieInfo
 
 class MockMovieService: MovieService {
+
+	var error: Error?
+
 	func fetchMovies(from endpoint: Endpoint, params: [String : String]?, successHandler: @escaping (MoviesResponse) -> Void, errorHandler: @escaping (Error) -> Void) {
 		switch endpoint {
 		case .nowPlaying:
 			let movie = Movie(testTitle: MovieTestTitle.playingNow)
 			let movieResponse = MoviesResponse(page: 1, totalResults: 1, totalPages: 1, results: [movie])
 
-			// invoke completion handler
-			successHandler(movieResponse)
+			if let error = error {
+				errorHandler(error)
+				return
+			} else {
+				// invoke completion handler
+				successHandler(movieResponse)
+			}
 
 		case .topRated:
 			let movie = Movie(testTitle: MovieTestTitle.topRated)
 			let movieResponse = MoviesResponse(page: 1, totalResults: 1, totalPages: 1, results: [movie])
 
-			// invoke completion handler
-			successHandler(movieResponse)
+			if let error = error {
+				errorHandler(error)
+				return
+			} else {
+				// invoke completion handler
+				successHandler(movieResponse)
+			}
 
 		case .popular:
 			let movie = Movie(testTitle: MovieTestTitle.popular)
 			let movieResponse = MoviesResponse(page: 1, totalResults: 1, totalPages: 1, results: [movie])
 
-			// invoke completion handler
-			successHandler(movieResponse)
+			if let error = error {
+				errorHandler(error)
+				return
+			} else {
+				// invoke completion handler
+				successHandler(movieResponse)
+			}
 
 		case .upcoming:
 			let movie = Movie(testTitle: MovieTestTitle.ucoming)
 			let movieResponse = MoviesResponse(page: 1, totalResults: 1, totalPages: 1, results: [movie])
 
-			// invoke completion handler
-			successHandler(movieResponse)
+			if let error = error {
+				errorHandler(error)
+				return
+			} else {
+				// invoke completion handler
+				successHandler(movieResponse)
+			}
 		}
 	}
 

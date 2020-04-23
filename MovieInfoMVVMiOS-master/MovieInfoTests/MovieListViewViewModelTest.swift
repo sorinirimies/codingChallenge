@@ -21,6 +21,7 @@ class MovieListViewViewModelTest: XCTestCase {
 	var viewModel: MovieListViewViewModel!
 	var scheduler: SchedulerType!
 	var endpoint: BehaviorRelay<Endpoint>!
+	var movieService: MockMovieService!
 
 
 	override func setUp() {
@@ -28,13 +29,29 @@ class MovieListViewViewModelTest: XCTestCase {
 		endpoint = BehaviorRelay<Endpoint>(value:Endpoint.init(index: 0)!)
 
 		// Initialize movie service
-		let movieService = MockMovieService()
+		movieService = MockMovieService()
 
 		// Initialize view model
 		viewModel = MovieListViewViewModel(endpoint: endpoint.asDriver(), movieService: movieService)
 
 		// Initialize scheduler
 		scheduler = ConcurrentDispatchQueueScheduler(qos: .default)
+	}
+
+	func testHasError() {
+
+		movieService.error = MovieError.noData
+
+		// Subscription
+		let observable = viewModel.movies.asObservable().subscribeOn(scheduler)
+
+		endpoint.accept(Endpoint.init(index: 0)!)
+
+		// Fetch Result
+		let result = try! observable.toBlocking().first()!
+
+		XCTAssertEqual(result.count, 0)
+		XCTAssertTrue(viewModel.hasError)
 	}
 
 	func testFilterByPlayingNow() {
@@ -117,6 +134,7 @@ class MovieListViewViewModelTest: XCTestCase {
 		viewModel = nil
 		scheduler = nil
 		endpoint = nil
+		movieService = nil
 	}
 }
 

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3372E4052451CDD40024325D /* MovieInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372E4042451CDD40024325D /* MovieInfoTests.swift */; };
+		3372E40D2451D0490024325D /* MockMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372E40C2451D0490024325D /* MockMovieService.swift */; };
 		7FD29C418FA5B086BD1C33CF /* Pods_MovieInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E089A3FB2A9C7F5BC788C7C /* Pods_MovieInfo.framework */; };
 		8BA3C3022234D68B00DD11C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C3012234D68B00DD11C1 /* AppDelegate.swift */; };
 		8BA3C3072234D68B00DD11C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C3052234D68B00DD11C1 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		3372E4022451CDD40024325D /* MovieInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3372E4042451CDD40024325D /* MovieInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoTests.swift; sourceTree = "<group>"; };
 		3372E4062451CDD40024325D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3372E40C2451D0490024325D /* MockMovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieService.swift; sourceTree = "<group>"; };
 		4601DAB847F2CECF9E5F3266 /* Pods-MovieInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieInfo.debug.xcconfig"; path = "Target Support Files/Pods-MovieInfo/Pods-MovieInfo.debug.xcconfig"; sourceTree = "<group>"; };
 		479B5323C1C83A3D21FFDF46 /* Pods-MovieInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieInfo.release.xcconfig"; path = "Target Support Files/Pods-MovieInfo/Pods-MovieInfo.release.xcconfig"; sourceTree = "<group>"; };
 		63CF90A2A74A850DF01F19C7 /* Pods-MovieInfo-MovieInfoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieInfo-MovieInfoTests.release.xcconfig"; path = "Target Support Files/Pods-MovieInfo-MovieInfoTests/Pods-MovieInfo-MovieInfoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3372E4042451CDD40024325D /* MovieInfoTests.swift */,
+				3372E40C2451D0490024325D /* MockMovieService.swift */,
 				3372E4062451CDD40024325D /* Info.plist */,
 			);
 			path = MovieInfoTests;
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3372E40D2451D0490024325D /* MockMovieService.swift in Sources */,
 				3372E4052451CDD40024325D /* MovieInfoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

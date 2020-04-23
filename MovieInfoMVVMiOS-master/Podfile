@@ -10,4 +10,10 @@ target 'MovieInfo' do
   pod 'RxSwift'
   pod 'RxCocoa'
 
+# RxTest and RxBlocking make the most sense in the context of unit/integration tests
+target 'MovieInfoTests' do
+    pod 'RxBlocking'
+    pod 'RxTest'
+end
+
 end

@@ -1,25 +1,41 @@
 PODS:
   - Kingfisher (4.10.0)
+  - RxAtomic (4.4.2)
+  - RxBlocking (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
+  - RxTest (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
 
 DEPENDENCIES:
   - Kingfisher
+  - RxBlocking
   - RxCocoa
   - RxSwift
+  - RxTest
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Kingfisher
     - RxCocoa
     - RxSwift
+  trunk:
+    - RxAtomic
+    - RxBlocking
+    - RxTest
 
 SPEC CHECKSUMS:
   Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  RxTest: f8e548755ca3c7502dc41c7d3b28802c90115a38
 
-PODFILE CHECKSUM: 1472f7eb55828df4695f92ee19a02ca119d29c03
+PODFILE CHECKSUM: 918b6b1a7522cfd7fe0ee8cbb01d31ca29b3067e
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.8.4

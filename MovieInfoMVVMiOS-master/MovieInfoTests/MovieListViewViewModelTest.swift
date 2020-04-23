@@ -42,7 +42,6 @@ class MovieListViewViewModelTest: XCTestCase {
 		// Subscription
 		let observable = viewModel.movies.asObservable().subscribeOn(scheduler)
 
-		// Emit event ".value"
 		endpoint.accept(Endpoint.init(index: 0)!)
 
 		// Fetch Result
@@ -55,6 +54,63 @@ class MovieListViewViewModelTest: XCTestCase {
 		let movie = result.first!
 
 		XCTAssertEqual(movie.title, MovieTestTitle.playingNow)
+	}
+
+	func testFilterByTopRated() {
+
+		// Subscription
+		let observable = viewModel.movies.asObservable().subscribeOn(scheduler)
+
+		endpoint.accept(Endpoint.init(index: 3)!)
+
+		// Fetch Result
+		let result = try! observable.toBlocking().first()!
+
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.count, 1)
+
+		// Fetch Movie
+		let movie = result.first!
+
+		XCTAssertEqual(movie.title, MovieTestTitle.topRated)
+	}
+
+	func testFilterByPopular() {
+
+		// Subscription
+		let observable = viewModel.movies.asObservable().subscribeOn(scheduler)
+
+		endpoint.accept(Endpoint.init(index: 1)!)
+
+		// Fetch Result
+		let result = try! observable.toBlocking().first()!
+
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.count, 1)
+
+		// Fetch Movie
+		let movie = result.first!
+
+		XCTAssertEqual(movie.title, MovieTestTitle.popular)
+	}
+
+	func testFilterByUpcoming() {
+
+		// Subscription
+		let observable = viewModel.movies.asObservable().subscribeOn(scheduler)
+
+		endpoint.accept(Endpoint.init(index: 2)!)
+
+		// Fetch Result
+		let result = try! observable.toBlocking().first()!
+
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.count, 1)
+
+		// Fetch Movie
+		let movie = result.first!
+
+		XCTAssertEqual(movie.title, MovieTestTitle.ucoming)
 	}
 
 	override func tearDown() {

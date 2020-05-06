@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 06 21:01:36 CEST 2020","Wed May 06 21:02:23 CEST 2020","47192","","movieList.movies list managment","","movieList.movies list managment","","Check movie details -- @1.1 ",""
+"passed","Wed May 06 21:01:36 CEST 2020","Wed May 06 21:02:31 CEST 2020","55221","","movieList.movies list managment","","movieList.movies list managment","","Check movie details -- @1.2 ",""

@@ -7,7 +7,10 @@ Feature: movies list managment
 
         Examples:
             | title                      | release_date |
-            | Die Hard: With a Vengeance | 1995-05-19   |
-            | John Wick                  | 2014-10-22   |
+            | Ad Astra                   | 2019-09-17   |
+            | Underwater                 | 2020-01-08   |
+
+            #| Die Hard: With a Vengeance | 1995-05-19   |
+            #| John Wick                  | 2014-10-22   |
 
         

@@ -20,6 +20,7 @@ class MoviesListPage():
         view = app.get_driver().find_element(*MoviesListLocators.VIEWER_PAGE)
         footer = app.get_driver().find_element(*MoviesListLocators.FOOTER)
         WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
+        print(" - Movies list page check.")
 
 
     def click_on_movie(self, text):
@@ -29,13 +30,14 @@ class MoviesListPage():
         for i in range(0,len(movies)):
             WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
             title = app.get_driver().find_elements(*MoviesListLocators.MOVIES_CONTENT)[i].text
-            print(title)
             if text in title:
                 WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
                 app.get_driver().find_elements(*MoviesListLocators.MOVIES_CONTENT)[i].click()
                 found = True
+                print(" - Film " + text + " found. Click on it.")
                 break
         if not found:
+            print(" - Film " + text + " not found. Swipe.")
             location = app.get_driver().find_element(*MoviesListLocators.MOVIES_PANEL).location
             size = app.get_driver().find_element(*MoviesListLocators.MOVIES_PANEL).size
             origX = location['x'] + size['width']/2

@@ -1,13 +1,27 @@
+import sys
+
 from appium import webdriver
 import os
 
 class AndroidApp():
+
     dirname = os.path.dirname(__file__)
     filename = os.path.join(dirname, '..\\app\\app-debug.apk')
-    desired_caps = {
-            "deviceName": "laureDevice",
+    appium_url = "http://localhost:4723/wd/hub"
+
+    laure_device = {
+            "deviceName": "laure_device",
             "app": filename,
             "platformName": "ANDROID"}
+    emulator_Pixel_3 = {
+        "deviceName": "Pixel_3_android_8.1",
+        "app": filename,
+        "platformVersion": "8.1",
+        "platformName": "ANDROID"}
+    direct_device = {
+        "app": filename,
+        "platformName": "ANDROID"}
+
     instance = None
 
     @classmethod
@@ -20,10 +34,23 @@ class AndroidApp():
         self.driver = ""
         pass
 
-    def load_app(self):
-        self.driver = webdriver.Remote("http://localhost:4723/wd/hub", self.desired_caps)
+    def load_app(self, context):
+        device = context.config.userdata.get("device")
+        if device == "laure_device":
+            desired_caps = self.laure_device
+        elif device == "emulator_Pixel_3":
+            desired_caps = self.emulator_Pixel_3
+        elif device == "direct_device":
+            desired_caps = self.direct_device
+        else:
+            print("No desired capabilities found for this device name.")
+            sys.exit();
+        self.driver = webdriver.Remote(self.appium_url, desired_caps)
 
     def get_driver(self):
         return self.driver
+
+    def close_driver(self):
+        return self.driver.quit()
 
 app = AndroidApp.get_instance()

@@ -1,0 +1,40 @@
+{
+  "movieList.movies list managment:movieList.movies list managment#Check movie details -- @1.1 " : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9b299e353675d06e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588799545179,
+        "stop" : 1588799558313,
+        "duration" : 13134
+      }
+    } ]
+  },
+  "movieList.movies list managment:movieList.movies list managment#Check movie details -- @1.2 " : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68e0b10deb2fa723",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588799545179,
+        "stop" : 1588799560430,
+        "duration" : 15251
+      }
+    } ]
+  }
+}

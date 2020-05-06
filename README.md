@@ -9,8 +9,8 @@ Before we start there are some rules of engagement:
 3. Please respect the given deadline
 
 ## Setup before starting
-- create a GitHub Account if not having one already => github user : lolotoms
-- create a TMDB account https://www.themoviedb.org/documentation/api => TMDB user : lolotoms
+- create a GitHub Account if not having one already
+- create a TMDB account https://www.themoviedb.org/documentation/api
 - use a proxy tool, e.g. https://mitmproxy.org
 
 ## The Challenge
@@ -18,7 +18,7 @@ Before we start there are some rules of engagement:
 The challenge consits in:
 1. Choose one of an already existing Android or iOS TMDB client Apps from these:
 
-https://github.com/skydoves/TheMovies => I choose this one
+https://github.com/skydoves/TheMovies
 
 https://github.com/alfianlosari/MovieInfoMVVMiOS
 
@@ -28,17 +28,50 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 
 2. Write automation tests based on the sample project you chose. Automations tests should include:
 - going from main movies list screen to the details screen of the app => 1 scenario outline : Check movie details (features folder)
-- filtering movies based on year or popularity => No filtering functionality found !
+- filtering movies based on year or popularity
 
 3. Cucumber UI features:
-- based on the screens in the app write Cucumber features => 1 scenario outline : Check movie details (features folder)
+- based on the screens in the app write Cucumber features
 
 4. Network tests => Not possible on real device which need to be root
 - use one of the tracing tools to trace the app network traffic
 - simulate network velocity
 
-## Run tests
+## Automation Solution
 
-- Install appium with npm and run it => Appium runing on http://localhost:4723
-- Connect your real device to computer
-- double click on run_tests.sh
+1. Technical solution
+I chose python to implement feature on The movies app.
+1. Requirements:
+    - appium installed and running at http://localhost:4723
+    ![](images/run_appium.png)
+    - real device or emulator connected and correctly configured. Before running feature, be sure there is only one device (virtual or real) connected to your computer with adb.
+    ![](images/adb_devices.png)
+    
+2. Run tests
+    Run run_tests.sh file from terminal. Repository includes python virtual environment with all requirements.
+    ![](images/run_test.png)
+    This script execute 2 tasks:
+        - behave task is used to execute cucumber features and generates output file
+        - allure task is used to generate prettier html reports
+
+3. Consult tests report
+    Open Reports\allure\index.html in your browser and navigate
+    ![](images/report.png)
+    ![](images/report2.png)
+    ![](images/report3.png)
+
+
+
+## Python frameworks
+- behave => cucumber
+- hamcrest => assertions
+- allure => report
+- appium => mobile automation
+- selenium webdriver => wait, expected conditions
+
+## Findings & faced issues
+
+- emulator network no internet issue :
+    - add "C:\Users\lauthoma\AppData\Local\Android\Sdk\emulator" to path variable
+    - restart windows session
+    - run emulator with dns-server option : emulator.exe @Pixel_3_android_8.1 -dns-server 8.8.8.8

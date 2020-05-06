@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "movieList.movies list managment",
+    "children" : [ {
+      "name" : "Check movie details -- @1.1 ",
+      "uid" : "a1d5bad71e1af767",
+      "parentUid" : "07c77cc36f314dfe6c2d1616e86a3518",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588791696716,
+        "stop" : 1588791743908,
+        "duration" : 47192
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check movie details -- @1.2 ",
+      "uid" : "5e2f3379e0d1da41",
+      "parentUid" : "07c77cc36f314dfe6c2d1616e86a3518",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588791696716,
+        "stop" : 1588791751937,
+        "duration" : 55221
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "07c77cc36f314dfe6c2d1616e86a3518"
+  } ]
+}

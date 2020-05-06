@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "movieList.movies list managment",
+    "children" : [ {
+      "name" : "Check movie details -- @1.1 ",
+      "uid" : "a1d5bad71e1af767",
+      "parentUid" : "0fb4264217134b4a2e7bfad9224e523b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588791696716,
+        "stop" : 1588791743908,
+        "duration" : 47192
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check movie details -- @1.2 ",
+      "uid" : "5e2f3379e0d1da41",
+      "parentUid" : "0fb4264217134b4a2e7bfad9224e523b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588791696716,
+        "stop" : 1588791751937,
+        "duration" : 55221
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "movieList.movies list managment"
+  } ]
+}

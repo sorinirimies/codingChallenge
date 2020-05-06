@@ -62,15 +62,16 @@ Project structure:
 1. Requirements:
     - appium installed and running at http://localhost:4723
     ![](images/run_appium.png)
-    - real device or emulator connected and correctly configured. Before running feature, be sure there is only one device (virtual or real) connected to your computer with adb.
+    - real device or emulator connected and correctly configured. Before running feature, be sure there is only one device
+    (virtual or real) connected to your computer with adb.
     ![](images/adb_devices.png)
     
 2. Run tests
     Run run_tests.sh file from terminal. Repository includes python virtual environment with all requirements.
     ![](images/run_test.png)
     This script execute 2 tasks:
-        - behave task is used to execute cucumber features and generates output file
-        - allure task is used to generate prettier html reports
+    - behave task is used to execute cucumber features and generates output file
+    - allure task is used to generate prettier html reports
 
 3. Consult tests report
     Open Reports\allure\index.html in your browser and navigate

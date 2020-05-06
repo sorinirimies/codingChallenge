@@ -5,7 +5,7 @@
     "name" : "LFR041858",
     "children" : [ {
       "name" : "Check movie details -- @1.2 ",
-      "uid" : "68e0b10deb2fa723",
+      "uid" : "e6f47f7eae11a679",
       "parentUid" : "b94dc552ae31eb8eed6b625e2c2c6c48",
       "status" : "passed",
       "time" : {
@@ -18,7 +18,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Check movie details -- @1.1 ",
-      "uid" : "9b299e353675d06e",
+      "uid" : "7b80198240338cfe",
       "parentUid" : "b94dc552ae31eb8eed6b625e2c2c6c48",
       "status" : "passed",
       "time" : {

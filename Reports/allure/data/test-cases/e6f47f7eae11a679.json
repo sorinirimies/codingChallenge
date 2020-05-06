@@ -1,11 +1,11 @@
 {
-  "uid" : "9b299e353675d06e",
-  "name" : "Check movie details -- @1.1 ",
-  "historyId" : "movieList.movies list managment:movieList.movies list managment#Check movie details -- @1.1 ",
+  "uid" : "e6f47f7eae11a679",
+  "name" : "Check movie details -- @1.2 ",
+  "historyId" : "movieList.movies list managment:movieList.movies list managment#Check movie details -- @1.2 ",
   "time" : {
     "start" : 1588799545179,
-    "stop" : 1588799558313,
-    "duration" : 13134
+    "stop" : 1588799560430,
+    "duration" : 15251
   },
   "status" : "passed",
   "flaky" : false,
@@ -20,8 +20,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "",
       "time" : { },
@@ -30,8 +30,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "@scenario.begin",
       "time" : { },
@@ -40,48 +40,48 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "  Scenario Outline: Check movie details -- @1.1 ",
+      "name" : "  Scenario Outline: Check movie details -- @1.2 ",
       "time" : { },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "    Given I am on \"movies list\" page ... passed in 3.060s",
+      "name" : "    Given I am on \"movies list\" page ... passed in 3.115s",
       "time" : { },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "    When I go to detail page of \"Ad Astra\" ... passed in 6.998s",
+      "name" : "    When I go to detail page of \"Underwater\" ... passed in 9.572s",
       "time" : { },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : "    Then I see the release date \"2019-09-17\" of \"Ad Astra\" ... passed in 3.077s",
+      "name" : "    Then I see the release date \"2020-01-08\" of \"Underwater\" ... passed in 2.565s",
       "time" : { },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "",
       "time" : { },
@@ -90,8 +90,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "@scenario.end",
       "time" : { },
@@ -100,8 +100,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "--------------------------------------------------------------------------------",
       "time" : { },
@@ -110,8 +110,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "",
       "time" : { },
@@ -120,8 +120,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Captured stdout:",
       "time" : { },
@@ -130,8 +130,8 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : " - Movies list page check.",
       "time" : { },
@@ -140,45 +140,55 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : " - Film Ad Astra not found. Swipe.",
+      "name" : " - Film Underwater not found. Swipe.",
       "time" : { },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : " - Film Ad Astra found. Click on it.",
+      "name" : " - Film Underwater not found. Swipe.",
       "time" : { },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
-      "name" : " - Assertion : title Ad Astra, release date 2019-09-17.",
+      "name" : " - Film Underwater found. Click on it.",
       "time" : { },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " - Assertion : title Underwater, release date 2020-01-08.",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 16,
+    "stepsCount" : 17,
     "hasContent" : true,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -207,6 +217,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9b299e353675d06e.json",
+  "source" : "e6f47f7eae11a679.json",
   "parameterValues" : [ ]
 }

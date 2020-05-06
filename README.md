@@ -37,10 +37,28 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 - use one of the tracing tools to trace the app network traffic
 - simulate network velocity
 
-## Automation Solution
+## Technical solution
 
-1. Technical solution
-I chose python to implement feature on The movies app.
+I chose python to implement feature on The movies app. I had to use few python library in order to automate Android UI:
+- behave => cucumber implementation
+- hamcrest => test assertions
+- allure => genrate html report
+- appium => mobile automation framework
+- selenium webdriver => wait, expected conditions
+
+Project structure:
+- app : application file
+- features : features files, steps defintions, environment variables
+- pages : possible actions on each pages
+- Reports : behave output, allure reports
+- resources : locators values
+- venv : Python virtual environment
+- behave.ini : behave configuration
+- requirements.txt : python requirements for local installation
+- run_tests.sh : shell script to execute script and generate report
+
+## Run tests
+
 1. Requirements:
     - appium installed and running at http://localhost:4723
     ![](images/run_appium.png)
@@ -59,15 +77,6 @@ I chose python to implement feature on The movies app.
     ![](images/report.png)
     ![](images/report2.png)
     ![](images/report3.png)
-
-
-
-## Python frameworks
-- behave => cucumber
-- hamcrest => assertions
-- allure => report
-- appium => mobile automation
-- selenium webdriver => wait, expected conditions
 
 ## Findings & faced issues
 

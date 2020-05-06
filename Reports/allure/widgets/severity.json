@@ -1,20 +1,20 @@
 [ {
-  "uid" : "9b299e353675d06e",
-  "name" : "Check movie details -- @1.1 ",
-  "time" : {
-    "start" : 1588799545179,
-    "stop" : 1588799558313,
-    "duration" : 13134
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "68e0b10deb2fa723",
+  "uid" : "e6f47f7eae11a679",
   "name" : "Check movie details -- @1.2 ",
   "time" : {
     "start" : 1588799545179,
     "stop" : 1588799560430,
     "duration" : 15251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b80198240338cfe",
+  "name" : "Check movie details -- @1.1 ",
+  "time" : {
+    "start" : 1588799545179,
+    "stop" : 1588799558313,
+    "duration" : 13134
   },
   "status" : "passed",
   "severity" : "normal"

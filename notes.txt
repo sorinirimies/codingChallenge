@@ -5,7 +5,7 @@ no-capture=True
 
 #./venv/Scripts/python.exe -m behave -D device=direct_device ./features/*
 
-./venv/Scripts/python.exe -m behave -f allure_behave.formatter:AllureFormatter -D device=direct_device -o Reports/results ./features
+.\venv\Scripts\python.exe -m behave -f allure_behave.formatter:AllureFormatter -D device=direct_device ./features
 
 .\venv\Scripts\python.exe -m behave --format=json -o Reports\data.json -D device=direct_device .\features
 

@@ -71,7 +71,9 @@ Project structure:
     
 2. Run tests
     Run run_tests.sh file from terminal. Repository includes python virtual environment with all requirements.
-    ![](images/run_test.png)
+
+    ![](images/run_test.PNG)
+
     This script execute 2 tasks:
     - behave task is used to execute cucumber features and generates output file
     - allure task is used to generate prettier html reports

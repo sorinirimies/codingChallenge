@@ -27,7 +27,7 @@ https://github.com/haroldadmin/MovieDB
 https://github.com/IhwanID/belajar-android-jetpack-pro
 
 2. Write automation tests based on the sample project you chose. Automations tests should include:
-- going from main movies list screen to the details screen of the app => 1 scenario outline : Check movie details (features folder)
+- going from main movies list screen to the details screen of the app
 - filtering movies based on year or popularity
 
 3. Cucumber UI features:
@@ -66,7 +66,7 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 This test project implements the feature "movies list managment" with one scenario outline "Check movie details".
 An example table is used to test few dataset :
 
-    ![](images/Feature.PNG)
+    ![](images/Feature.png)
 
 ## Run tests
 
@@ -99,7 +99,7 @@ An example table is used to test few dataset :
 
 1. Trace the app network traffic
 
-I used fiddler to trace network traffic:
+I used fiddler to trace network traffic. Click on image below to display youtube video :
 
 [![Watch the video](/images/traffic_miniature.jpg)](https://youtu.be/crnPLIXomy4)
 
@@ -115,3 +115,6 @@ I used fiddler to trace network traffic:
 - mitmproxy :
     - Certificate installation issue on real device and emulator
     - Use fiddler solution instead
+
+- Exercice :
+    - filtering movies based on year or popularity => no filtering options found

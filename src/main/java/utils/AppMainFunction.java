@@ -23,7 +23,7 @@ public class AppMainFunction {
         URL url = new URL(URL_STRING);
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "appium");
         capabilities.setCapability("allowTestPackages", "true");
         capabilities.setCapability(MobileCapabilityType.APP, AppProperties.getApk());
         driver = new AndroidDriver<MobileElement>(url, capabilities);

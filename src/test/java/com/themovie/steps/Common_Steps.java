@@ -56,7 +56,6 @@ public class Common_Steps {
     @Then("User is on the Tv Show's details page {string}")
     public void userIsOnTheTvShowSDetailsPage(String tvShow_name) {
         common_po.check_tvshow(tvShow_name);
-
     }
 
     @Then("User is on the Star screen")

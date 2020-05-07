@@ -1,14 +1,15 @@
 package utils;
 
 
-import io.cucumber.testng.CucumberOptions;
-import io.cucumber.testng.FeatureWrapper;
-import io.cucumber.testng.PickleWrapper;
-import io.cucumber.testng.TestNGCucumberRunner;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.FeatureWrapper;
+import io.cucumber.testng.PickleWrapper;
+import io.cucumber.testng.TestNGCucumberRunner;
 
 /*
 TAGS : "tag1 or (tag2 and tag3)" : available tags are @Sample / @Movie / @Star / @TvShow / @Full

@@ -17,6 +17,8 @@ dependencies {
     implementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '5.5.0'
     implementation group: 'io.cucumber', name: 'cucumber-testng', version: '5.5.0'
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+// https://mvnrepository.com/artifact/io.appium/mitmproxy-java
+    implementation group: 'io.appium', name: 'mitmproxy-java', version: '2.0.1'
 }
 
 test {

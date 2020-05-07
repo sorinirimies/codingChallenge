@@ -16,11 +16,11 @@ class MovieDetailsPage():
         self.driver = app.get_driver()
 
     def get_title(self):
-        el = WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.ID, 'detail_header_title')))
+        el = WebDriverWait(app.get_driver(), 20).until(EC.presence_of_element_located((By.ID, 'detail_header_title')))
         return el.text
 
     def get_release_date(self):
-       el = WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.ID, 'detail_header_release')))
+       el = WebDriverWait(app.get_driver(), 20).until(EC.presence_of_element_located((By.ID, 'detail_header_release')))
        return el.text
 
 movieDetailsPage = MovieDetailsPage.get_instance()

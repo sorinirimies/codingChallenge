@@ -20,6 +20,7 @@ class AndroidApp():
         "platformName": "ANDROID"}
     direct_device = {
         "app": filename,
+        "automationName": "UiAutomator1",
         "platformName": "ANDROID"}
 
     instance = None

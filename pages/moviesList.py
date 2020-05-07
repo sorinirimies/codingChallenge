@@ -19,19 +19,19 @@ class MoviesListPage():
         title = app.get_driver().find_element(*MoviesListLocators.TITLE)
         view = app.get_driver().find_element(*MoviesListLocators.VIEWER_PAGE)
         footer = app.get_driver().find_element(*MoviesListLocators.FOOTER)
-        WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
+        WebDriverWait(app.get_driver(), 20).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
         print(" - Movies list page check.")
 
 
     def click_on_movie(self, text):
         found = False
-        WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
+        WebDriverWait(app.get_driver(), 20).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
         movies = app.get_driver().find_elements(*MoviesListLocators.MOVIES_CONTENT)
         for i in range(0,len(movies)):
-            WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
+            WebDriverWait(app.get_driver(), 20).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
             title = app.get_driver().find_elements(*MoviesListLocators.MOVIES_CONTENT)[i].text
             if text in title:
-                WebDriverWait(app.get_driver(), 5).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
+                WebDriverWait(app.get_driver(), 20).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))
                 app.get_driver().find_elements(*MoviesListLocators.MOVIES_CONTENT)[i].click()
                 found = True
                 print(" - Film " + text + " found. Click on it.")

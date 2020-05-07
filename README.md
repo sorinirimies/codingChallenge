@@ -103,6 +103,10 @@ I used fiddler to trace network traffic. Click on image below to display youtube
 
 [![Watch the video](/images/traffic_miniature.jpg)](https://youtu.be/crnPLIXomy4)
 
+Here you can see the network traffic statistics:
+
+![](images/network_stats.PNG)
+
 2. simulate network velocity
 
 ## Findings & faced issues

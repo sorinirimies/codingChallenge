@@ -33,29 +33,40 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 3. Cucumber UI features:
 - based on the screens in the app write Cucumber features
 
-4. Network tests => Not possible on real device which need to be root
+4. Network tests
 - use one of the tracing tools to trace the app network traffic
 - simulate network velocity
 
+# QA Engineer Coding Challenge - Solution
+
 ## Technical solution
 
-I chose python to implement feature on The movies app. I had to use few python library in order to automate Android UI:
-- behave => cucumber implementation
-- hamcrest => test assertions
-- allure => genrate html report
-- appium => mobile automation framework
-- selenium webdriver => wait, expected conditions
+- I chose python to implement feature on The movies app. I had to use few python library in order to automate Android UI:
 
-Project structure:
-- app : application file
-- features : features files, steps defintions, environment variables
-- pages : possible actions on each pages
-- Reports : behave output, allure reports
-- resources : locators values
-- venv : Python virtual environment
-- behave.ini : behave configuration
-- requirements.txt : python requirements for local installation
-- run_tests.sh : shell script to execute script and generate report
+    - behave => cucumber implementation
+    - hamcrest => tests assertions
+    - allure => generates html report
+    - appium => mobile automation framework
+    - selenium webdriver => wait, expected conditions
+
+- Project structure and contents:
+
+    - app : application file
+    - features : features files, steps defintions, environment variables
+    - pages : possible actions on each pages
+    - Reports : behave output, allure reports
+    - resources : locators values
+    - venv : Python virtual environment
+    - behave.ini : behave configuration
+    - requirements.txt : python requirements for local installation
+    - run_tests.sh : shell script to execute script and generate report
+
+## Implemented feature
+
+This test project implements the feature "movies list managment" with one scenario outline "Check movie details".
+An example table is used to test few dataset :
+
+    ![](images/Feature.PNG)
 
 ## Run tests
 
@@ -84,9 +95,23 @@ Project structure:
     ![](images/report2.png)
     ![](images/report3.png)
 
+## Network tests
+
+1. Trace the app network traffic
+
+I used fiddler to trace network traffic:
+
+[![Watch the video](/images/traffic_miniature.jpg)](https://youtu.be/crnPLIXomy4)
+
+2. simulate network velocity
+
 ## Findings & faced issues
 
 - emulator network no internet issue :
     - add "C:\Users\lauthoma\AppData\Local\Android\Sdk\emulator" to path variable
     - restart windows session
     - run emulator with dns-server option : emulator.exe @Pixel_3_android_8.1 -dns-server 8.8.8.8
+
+- mitmproxy :
+    - Certificate installation issue on real device and emulator
+    - Use fiddler solution instead

@@ -1,10 +1,10 @@
-<testsuite name="movieList.movies list managment" tests="2" errors="0" failures="0" skipped="0" time="28.386405" timestamp="2020-05-06T23:12:25.179277" hostname="LFR041858"><testcase classname="movieList.movies list managment" name="Check movie details -- @1.1 " status="passed" time="13.134563"><system-out>
+<testsuite name="movieList.movies list managment" tests="2" errors="0" failures="0" skipped="0" time="43.915574" timestamp="2020-05-07T13:23:07.236907" hostname="LFR041858"><testcase classname="movieList.movies list managment" name="Check movie details -- @1.1 " status="passed" time="21.519986"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario Outline: Check movie details -- @1.1 
-    Given I am on "movies list" page ... passed in 3.060s
-    When I go to detail page of "Ad Astra" ... passed in 6.998s
-    Then I see the release date "2019-09-17" of "Ad Astra" ... passed in 3.077s
+    Given I am on "movies list" page ... passed in 4.140s
+    When I go to detail page of "Ad Astra" ... passed in 12.393s
+    Then I see the release date "2019-09-17" of "Ad Astra" ... passed in 4.987s
 
 @scenario.end
 --------------------------------------------------------------------------------
@@ -12,17 +12,18 @@
 Captured stdout:
  - Movies list page check.
  - Film Ad Astra not found. Swipe.
+ - Film Ad Astra not found. Swipe.
  - Film Ad Astra found. Click on it.
  - Assertion : title Ad Astra, release date 2019-09-17.
 
 ]]>
-</system-out></testcase><testcase classname="movieList.movies list managment" name="Check movie details -- @1.2 " status="passed" time="15.251842"><system-out>
+</system-out></testcase><testcase classname="movieList.movies list managment" name="Check movie details -- @1.2 " status="passed" time="22.395588"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario Outline: Check movie details -- @1.2 
-    Given I am on "movies list" page ... passed in 3.115s
-    When I go to detail page of "Underwater" ... passed in 9.572s
-    Then I see the release date "2020-01-08" of "Underwater" ... passed in 2.565s
+    Given I am on "movies list" page ... passed in 4.087s
+    When I go to detail page of "Underwater" ... passed in 13.769s
+    Then I see the release date "2020-01-08" of "Underwater" ... passed in 4.540s
 
 @scenario.end
 --------------------------------------------------------------------------------

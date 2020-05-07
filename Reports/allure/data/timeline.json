@@ -4,27 +4,27 @@
   "children" : [ {
     "name" : "LFR041858",
     "children" : [ {
-      "name" : "Check movie details -- @1.2 ",
-      "uid" : "e6f47f7eae11a679",
+      "name" : "Check movie details -- @1.1 ",
+      "uid" : "6d4779529c0a2230",
       "parentUid" : "b94dc552ae31eb8eed6b625e2c2c6c48",
       "status" : "passed",
       "time" : {
-        "start" : 1588799545179,
-        "stop" : 1588799560430,
-        "duration" : 15251
+        "start" : 1588850587236,
+        "stop" : 1588850608755,
+        "duration" : 21519
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
-      "name" : "Check movie details -- @1.1 ",
-      "uid" : "7b80198240338cfe",
+      "name" : "Check movie details -- @1.2 ",
+      "uid" : "15759e27a1c7bcff",
       "parentUid" : "b94dc552ae31eb8eed6b625e2c2c6c48",
       "status" : "passed",
       "time" : {
-        "start" : 1588799545179,
-        "stop" : 1588799558313,
-        "duration" : 13134
+        "start" : 1588850587236,
+        "stop" : 1588850609631,
+        "duration" : 22395
       },
       "flaky" : false,
       "newFailed" : false,

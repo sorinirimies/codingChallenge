@@ -1,0 +1,34 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.appium/java-client
+    implementation group: 'io.appium', name: 'java-client', version: '7.3.0'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '7.1.0'
+    implementation group: 'io.cucumber', name: 'cucumber-core', version: '5.5.0'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '5.5.0'
+//    compile group: 'io.cucumber', name: 'cucumber-java8', version: '5.5.0'
+    implementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '5.5.0'
+    implementation group: 'io.cucumber', name: 'cucumber-testng', version: '5.5.0'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+// https://mvnrepository.com/artifact/io.appium/mitmproxy-java
+    implementation group: 'io.appium', name: 'mitmproxy-java', version: '2.0.1'
+}
+
+test {
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+    useTestNG() {
+        suites 'src/test/java/utils/testng.xml'
+        useDefaultListeners = true
+    }
+    reports.html.enabled = false
+    testLogging {
+        events "passed", "failed", "skipped", "standardError"
+    }
+}

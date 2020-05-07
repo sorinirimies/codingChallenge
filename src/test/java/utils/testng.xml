@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="utils.AppMainFunction" configfailurepolicy="continue" verbose="2">
+    <test  name="feature">
+        <classes>
+            <class name="utils.TestBase">
+            </class>
+        </classes>
+    </test>
+</suite>

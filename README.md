@@ -41,7 +41,7 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 
 ## Technical solution
 
-- I chose python to implement feature on The movies app. I had to use few python library in order to automate Android UI:
+- I chose python to implement feature on The movies app (https://github.com/skydoves/TheMovies). I had to use few python library in order to automate Android UI:
 
     - behave => cucumber implementation
     - hamcrest => tests assertions

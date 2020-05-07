@@ -109,6 +109,8 @@ Here you can see the network traffic statistics:
 
 2. simulate network velocity
 
+Network logs are stored in Fiddler folder. 2 tests were done : one with full network , the other with low network configured from android emulator configuration.
+
 ## Findings & faced issues
 
 - emulator network no internet issue :

@@ -60,6 +60,13 @@ Note that network tests will be done on AVD only.
 Application build from project https://github.com/skydoves/TheMovies
 
 
+#### 3.1.6. Network overview
+
+using mitmproxy we can check all the call made by our test..
+<img src="content/network.png">
+
+
+
 ### 3.2. Pre-launch
 
 open 2 terminal:
@@ -74,4 +81,38 @@ Open your AVD or connect your real device.
 
 to launch project (CLI)
 > gradle test
+
+
+
+## 4. Ideas
+
+### 4.1. AVD - proxy
+
+we could check, for each interraction, if the proxy response is 200.
+If not, analyse the response.
+If yes, continue the test.
+
+That way we could manage to check on real time if there is a issue with the testing environment (API/Backend) or 
+the application itself whenever an error occurs on the application.
+
+### 4.2. Fully automated process
+
+the following processes can be easily automated (included in the code as part of the testing process):
+
+ - Appium server
+ - mitmproxy 
+ - AVD (emulator)
+ 
+That way we can reduce the time of precondition for launching the test.
+#### BUT
+We loose access to real time log in command prompt.
+
+open them in a new prompt is do-able, but tricky, we can also save each log in files...
+
+I chose not to do so in order to show the knowledge about the architecture.
+
+
+### 4.3 Standalone package
+
+in order to render the code run-able on everyone's computer, Appium and gradle can be made portable
 

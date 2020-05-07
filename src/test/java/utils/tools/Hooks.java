@@ -7,9 +7,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeoutException;
 
 
 public class Hooks {
@@ -24,24 +22,24 @@ public class Hooks {
 
 
     @Before
-    public void beforeScenario(Scenario scenario) throws IOException, TimeoutException {
+    public void beforeScenario(Scenario scenario) throws IOException {
         testContext.getScenarioContext().setContext("Running Scenario", scenario);
         testContext.setDriver();
 
-        //proxy part
-        messages = new ArrayList<>();
-        proxy = new MitmproxyJava("/usr/local/homebrew/Cellar/mitmproxy/5.1.1/bin/mitmdump", (InterceptedMessage m) -> {
-            System.out.println("intercepted request for " + m.getRequest().toString());
-            messages.add(m);
-            return m;
-        });
-        proxy.start();
+//        //proxy part
+//        messages = new ArrayList<>();
+//        proxy = new MitmproxyJava("/usr/local/homebrew/Cellar/mitmproxy/5.1.1/bin/mitmdump", (InterceptedMessage m) -> {
+//            System.out.println("intercepted request for " + m.getRequest().toString());
+//            messages.add(m);
+//            return m;
+//        });
+//        proxy.start();
     }
 
     @After
-    public void quit() throws InterruptedException{
-        proxy.stop();
-        System.out.println(this.messages);
+    public void quit() {
+//        proxy.stop();
+//        System.out.println(this.messages);
         testContext.getDriver().quit();
     }
 }

@@ -66,7 +66,7 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 This test project implements the feature "movies list managment" with one scenario outline "Check movie details".
 An example table is used to test few dataset :
 
-    ![](images/Feature.png)
+    ![](images/feature.png)
 
 ## Run tests
 

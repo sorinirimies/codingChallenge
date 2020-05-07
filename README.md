@@ -79,9 +79,30 @@ Open your AVD or connect your real device.
 
 ### 3.3. Launch tests
 
-to launch project (CLI)
+#### 3.3.1. CLI
 > gradle test
 
+#### 3.3.2. IDE
+<img src="content/idelaunch.png">
+
+
+#### 3.3.2. test network velocity
+there is a capabilit that allow to set the networkspeed.
+> capabilities.setCapability("networkSpeed", "lte");
+
+The networkSpeed desired capability will change the upload and download speed accessible to the emulator. The following values can be set, all speeds are in kbps:
+
+- gsm - GSM/CSD (up: 14.4, down: 14.4).
+- scsd - HSCSD (up: 14.4, down: 57.6).
+- gprs - GPRS (up: 28.8, down: 57.6).
+- edge - EDGE/EGPRS (up: 473.6, down: 473.6).
+- umts - UMTS/3G (up: 384.0, down: 384.0).
+- hsdpa - HSDPA (up: 5760.0, down: 13,980.0).
+- lte - LTE (up: 58,000, down: 173,000).
+- evdo - EVDO (up: 75,000, down: 280,000).
+- full - No limit, the default (up: 0.0, down: 0.0).
+
+then check responses time in mitmproxy
 
 
 ## 4. Ideas

@@ -137,3 +137,11 @@ I chose not to do so in order to show the knowledge about the architecture.
 
 in order to render the code run-able on everyone's computer, Appium and gradle can be made portable
 
+
+## NOTES
+
+filtering movies based on year or popularity wasn't possible for any of the 3 android applications.
+But we can see trough the proxy that the API allows such things...
+
+
+

@@ -1,0 +1,158 @@
+{
+  "uid" : "6ab827f8b481701e",
+  "name" : "Check movie details -- @1.2 ",
+  "historyId" : "movieList.movies list managment:movieList.movies list managment#Check movie details -- @1.2 ",
+  "time" : {
+    "start" : 1588881110509,
+    "stop" : 1588881110708,
+    "duration" : 199
+  },
+  "status" : "broken",
+  "statusMessage" : "type() takes 1 or 3 arguments",
+  "statusTrace" : "\n\nFailing step: Given I am on \"movies list\" page ... failed in 0.199s\nLocation: features/movieList.feature:4\nTraceback (most recent call last):\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\common.py\", line 9, in step_impl\n    movieListPage.check_moviesListPage()\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\pages\\moviesList.py\", line 20, in check_moviesListPage\n    print(type(*MoviesListLocators.TITLE))\nTypeError: type() takes 1 or 3 arguments\n\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "@scenario.begin",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "  Scenario Outline: Check movie details -- @1.2 ",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "    Given I am on \"movies list\" page ... failed in 0.199s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "    When I go to detail page of \"Underwater\" ... skipped in 0.000s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "    Then I see the release date \"2020-01-08\" of \"Underwater\" ... skipped in 0.000s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "@scenario.end",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "--------------------------------------------------------------------------------",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "movieList.movies list managment"
+  }, {
+    "name" : "host",
+    "value" : "LFR041858"
+  }, {
+    "name" : "testClass",
+    "value" : "movieList.movies list managment"
+  }, {
+    "name" : "package",
+    "value" : "movieList.movies list managment"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6ab827f8b481701e.json",
+  "parameterValues" : [ ]
+}

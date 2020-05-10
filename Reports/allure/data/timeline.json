@@ -1,0 +1,35 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LFR041858",
+    "children" : [ {
+      "name" : "Check movie details -- @1.1 ",
+      "uid" : "6d4779529c0a2230",
+      "parentUid" : "b94dc552ae31eb8eed6b625e2c2c6c48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588850587236,
+        "stop" : 1588850608755,
+        "duration" : 21519
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check movie details -- @1.2 ",
+      "uid" : "15759e27a1c7bcff",
+      "parentUid" : "b94dc552ae31eb8eed6b625e2c2c6c48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588850587236,
+        "stop" : 1588850609631,
+        "duration" : 22395
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b94dc552ae31eb8eed6b625e2c2c6c48"
+  } ]
+}

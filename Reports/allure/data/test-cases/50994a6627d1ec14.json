@@ -1,0 +1,158 @@
+{
+  "uid" : "50994a6627d1ec14",
+  "name" : "Check movie details -- @1.2 ",
+  "historyId" : "movieList.movies list managment:movieList.movies list managment#Check movie details -- @1.2 ",
+  "time" : {
+    "start" : 1588854798964,
+    "stop" : 1588854817495,
+    "duration" : 18531
+  },
+  "status" : "broken",
+  "statusMessage" : "Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up\n",
+  "statusTrace" : "\n\nFailing step: Given I am on \"movies list\" page ... failed in 18.531s\nLocation: features/movieList.feature:4\nTraceback (most recent call last):\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\common.py\", line 9, in step_impl\n    movieListPage.check_moviesListPage()\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\pages\\moviesList.py\", line 22, in check_moviesListPage\n    WebDriverWait(app.get_driver(), 20).until(EC.presence_of_element_located((By.XPATH, '//android.widget.RelativeLayout/android.widget.TextView')))\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 71, in until\n    value = method(self._driver)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 64, in __call__\n    return _find_element(driver, self.locator)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 415, in _find_element\n    raise e\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 411, in _find_element\n    return driver.find_element(*by)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 282, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 321, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 29, in check_response\n    raise wde\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 24, in check_response\n    super(MobileErrorHandler, self).check_response(response)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up\n\n\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "@scenario.begin",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "  Scenario Outline: Check movie details -- @1.2 ",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "    Given I am on \"movies list\" page ... failed in 18.531s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "    When I go to detail page of \"Underwater\" ... skipped in 0.000s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "    Then I see the release date \"2020-01-08\" of \"Underwater\" ... skipped in 0.000s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "@scenario.end",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "--------------------------------------------------------------------------------",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "movieList.movies list managment"
+  }, {
+    "name" : "host",
+    "value" : "LFR041858"
+  }, {
+    "name" : "testClass",
+    "value" : "movieList.movies list managment"
+  }, {
+    "name" : "package",
+    "value" : "movieList.movies list managment"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "50994a6627d1ec14.json",
+  "parameterValues" : [ ]
+}

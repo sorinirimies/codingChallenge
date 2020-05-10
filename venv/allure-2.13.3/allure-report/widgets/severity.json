@@ -1,0 +1,21 @@
+[ {
+  "uid" : "5e2f3379e0d1da41",
+  "name" : "Check movie details -- @1.2 ",
+  "time" : {
+    "start" : 1588791696716,
+    "stop" : 1588791751937,
+    "duration" : 55221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1d5bad71e1af767",
+  "name" : "Check movie details -- @1.1 ",
+  "time" : {
+    "start" : 1588791696716,
+    "stop" : 1588791743908,
+    "duration" : 47192
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,158 @@
+{
+  "uid" : "e806c57c2255eaa9",
+  "name" : "Check movie details -- @1.1 ",
+  "historyId" : "movieList.movies list managment:movieList.movies list managment#Check movie details -- @1.1 ",
+  "time" : {
+    "start" : 1588885354210,
+    "stop" : 1588885354210,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "HOOK-ERROR in before_scenario: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\\\Users\\\\lauthoma\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\platform-tools\\\\adb.exe -P 5037 -s emulator-5554 install -r C:\\\\Users\\\\lauthoma\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\appium\\\\node_modules\\\\appium-uiautomator2-server\\\\apks\\\\appium-uiautomator2-server-debug-androidTest.apk' exited with code 1'; Stderr: 'adb: failed to install C:\\Users\\lauthoma\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk: Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES: Failed to collect certificates from /data/app/vmdl418602367.tmp/base.apk: META-INF/CERT.SF has invalid digest for javax/annotation/meta/Exclusive.java in /data/app/vmdl418602367.tmp/base.apk]'; Code: '1'\nHOOK-ERROR in after_scenario: AttributeError: 'str' object has no attribute 'quit'",
+  "statusTrace" : "\nTraceback:\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\behave\\runner.py\", line 545, in run_hook\n    self.hooks[name](context, *args)\n  File \"features\\environment.py\", line 5, in before_scenario\n    app.load_app(context)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\pages\\app.py\", line 23, in load_app\n    self.driver = webdriver.Remote(RunVariables.APPIUM_URL, desired_caps)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 147, in __init__\n    super(WebDriver, self).__init__(\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 157, in __init__\n    self.start_session(capabilities, browser_profile)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 227, in start_session\n    response = self.execute(RemoteCommand.NEW_SESSION, parameters)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 321, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\lauthoma\\Documents\\codingChallenge\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\n\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "@scenario.begin",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "  Scenario Outline: Check movie details -- @1.1 ",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "    Given I am on \"movies list\" page ... untested in 0.000s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "    When I go to detail page of \"Ad Astra\" ... untested in 0.000s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "    Then I see the release date \"2019-09-17\" of \"Ad Astra\" ... untested in 0.000s",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "@scenario.end",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "--------------------------------------------------------------------------------",
+      "time" : { },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "movieList.movies list managment"
+  }, {
+    "name" : "host",
+    "value" : "LFR041858"
+  }, {
+    "name" : "testClass",
+    "value" : "movieList.movies list managment"
+  }, {
+    "name" : "package",
+    "value" : "movieList.movies list managment"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e806c57c2255eaa9.json",
+  "parameterValues" : [ ]
+}
